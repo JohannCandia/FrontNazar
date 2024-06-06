@@ -46,7 +46,7 @@ export const LoginPage = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover:border-blue-500"
                 id="username"
                 type="text"
-                placeholder="Ingrese su email.."
+                placeholder="Correo electronico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
 
