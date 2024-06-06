@@ -34,7 +34,7 @@ export const NewTicket: React.FC = () => {
             status: formData.status
         };
         try {
-            const response = await dispatch(createTicket(ticketData)).unwrap();
+             await dispatch(createTicket(ticketData)).unwrap();
             Swal.fire({
                 icon: 'success',
                 title: 'Ticket creado',
