@@ -72,6 +72,7 @@ export const TicketsPage = () => {
 
   return (
     <>
+      
       <div className="mt-16 container mx-auto p-4">
         <div className="flex justify-center space-x-4 mb-4">
           <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="border p-2 rounded">

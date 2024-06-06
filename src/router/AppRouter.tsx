@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { LoginPage } from "../login/pages/LoginPage";
 import HomePage from "../ticket/pages/HomePage";
-import { TicketsPage } from "../ticket/pages/TicketPage";
 
 export const AppRouter = () => {
   const { authStatus } = useAuth();
@@ -16,7 +15,7 @@ export const AppRouter = () => {
           <Route path="/*" element={<Navigate to="/auth/login" />} />
         </>
       ) : (
-        <Route path="/*" element={<TicketsPage />} />
+        <Route path="/*" element={<HomePage />} />
       )}
     </Routes>
   );
